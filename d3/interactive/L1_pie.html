@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Livingston O1 Glitches</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type='text/javascript' src="../../node_modules/d3js/d3.v3.min.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Livingston O1 Glitches</h1>
+    <h3>Gravity Spy ML Output</h3>
+
+
+<div id="pieChart"></div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.4/d3.min.js"></script>
+<script src="d3pie.min.js"></script>
+<script>
+var pie = new d3pie("pieChart", {
+	"header": {
+		"title": {
+			"text": "Livingston O1 Glitches",
+			"fontSize": 24,
+			"font": "open sans"
+		},
+		"subtitle": {
+			"text": "Gravity Spy ML Output",
+			"color": "#999999",
+			"fontSize": 12,
+			"font": "open sans"
+		},
+		"titleSubtitlePadding": 9
+	},
+	"footer": {
+		"text": "Total Number of post-DQ glitches: 21992 (SNR > 7.5 / 10 Hz < f < 2048 Hz)",
+		"color": "#999999",
+		"fontSize": 12,
+		"font": "open sans",
+		"location": "bottom-left"
+	},
+	"size": {
+		"canvasHeight": 1000,
+		"canvasWidth": 1200,
+		"pieInnerRadius": "5%",
+		"pieOuterRadius": "90%"
+	},
+	"data": {
+		"sortOrder": "label-asc",
+		"content": [
+			{
+				"label": "Air Compressor",
+				"value": 86,
+				"color": "#0c6197"
+			},
+			{
+				"label": "Blip",
+				"value": 1814,
+				"color": "#4daa4b"
+			},
+			{
+				"label": "Chirp",
+				"value": 1,
+				"color": "#daca61"
+			},
+			{
+				"label": "Extremely Loud",
+				"value": 168,
+				"color": "#e98125"
+			},
+			{
+				"label": "Helix",
+				"value": 6,
+				"color": "#cb2121"
+			},
+			{
+				"label": "Koi Fish",
+				"value": 120,
+				"color": "#ae83d5"
+			},
+			{
+				"label": "Light Modulation",
+				"value": 15,
+				"color": "#830909"
+			},
+			{
+				"label": "Low Frequency Burst",
+				"value": 5588,
+				"color": "#ce2aeb"
+			},
+			{
+				"label": "Low Frequency Lines",
+				"value": 3025,
+				"color": "#bca44a"
+			},
+			{
+				"label": "No Glitch",
+				"value": 6125,
+				"color": "#2484c1"
+			},
+			{
+				"label": "None of the Above",
+				"value": 168,
+				"color": "#1ee67b"
+			},
+			{
+				"label": "Paired Doves",
+				"value": 1,
+				"color": "#a4a0c9"
+			},
+			{
+				"label": "Power Line",
+				"value": 1264,
+				"color": "#322849"
+			},
+			{
+				"label": "Repeating Blips",
+				"value": 380,
+				"color": "#86f71a"
+			},
+			{
+				"label": "Scattered Light",
+				"value": 723,
+				"color": "#7d9058"
+			},
+			{
+				"label": "Scratchy",
+				"value": 1481,
+				"color": "#44b9b0"
+			},
+			{
+				"label": "Tomte",
+				"value": 84,
+				"color": "#7c37c0"
+			},
+			{
+				"label": "Violin Mode",
+				"value": 47,
+				"color": "#e65414"
+			},
+			{
+				"label": "Wandering Line",
+				"value": 35,
+				"color": "#8b6834"
+			},
+			{
+				"label": "Whistle",
+				"value": 861,
+				"color": "#248838"
+			}
+		]
+	},
+	"labels": {
+		"outer": {
+			"format": "label-value1",
+			"pieDistance": 35
+		},
+		"inner": {
+			"hideWhenLessThanPercentage": 3
+		},
+		"mainLabel": {
+			"fontSize": 11
+		},
+		"percentage": {
+			"color": "#ffffff",
+			"decimalPlaces": 0
+		},
+		"value": {
+			"color": "#adadad",
+			"fontSize": 11
+		},
+		"lines": {
+			"enabled": true
+		},
+		"truncation": {
+			"enabled": true
+		}
+	},
+	"effects": {
+		"pullOutSegmentOnClick": {
+			"effect": "elastic",
+			"speed": 600,
+			"size": 15
+		}
+	},
+	"misc": {
+		"gradient": {
+			"enabled": true,
+			"percentage": 100
+		}
+	}
+});
+</script>
+
+
+    <br></br>
+    <a href=https://gravityspy.ciera.northwestern.edu/pages/interactive/L1_freq.html>Freq Plot</a>
+    <br></br>
+    <a href=https://gravityspy.ciera.northwestern.edu/pages/interactive/L1_snr.html>SNR Plot</a>
+
+</body>
+</html>
